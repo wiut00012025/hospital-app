@@ -1,0 +1,100 @@
+@media (min-width: 992px) and (max-width: 1190px) {
+    .top-header .navbar .navbar-collapse ul li a {
+        font-size: 14px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .top-header .navbar .navbar-collapse ul li a {
+        padding: 5px 15px;
+    }
+
+}
+
+@media (max-width: 767px) {
+    .navbar-brand {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .top-header .navbar .navbar-collapse ul li a {
+        padding: 5px 15px;
+    }
+
+    .top-header {
+        position: relative;
+    }
+}
+
+@media (max-width: 991.98px) {
+    .navbar-expand-lg > .container, .navbar-expand-lg > .container-fluid {
+        padding-right: 0;
+        padding-left: 0
+    }
+}
+
+@media (min-width: 992px) {
+    .navbar-expand-lg {
+        -ms-flex-flow: row nowrap;
+        flex-flow: row nowrap;
+        -ms-flex-pack: start;
+        justify-content: flex-start
+    }
+
+    .navbar-expand-lg .navbar-nav {
+        -ms-flex-direction: row;
+        flex-direction: row
+    }
+
+    .navbar-expand-lg .navbar-nav .dropdown-menu {
+        position: absolute
+    }
+
+    .navbar-expand-lg .navbar-nav .nav-link {
+        padding-right: .5rem;
+        padding-left: .5rem
+    }
+
+    .navbar-expand-lg > .container, .navbar-expand-lg > .container-fluid {
+        -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap
+    }
+
+    .navbar-expand-lg .navbar-collapse {
+        display: -ms-flexbox !important;
+        display: flex !important;
+        -ms-flex-preferred-size: auto;
+        flex-basis: auto
+    }
+
+    .navbar-expand-lg .navbar-toggler {
+        display: none
+    }
+}
+
+
+@media (min-width: 576px) {
+    .container {
+        max-width: 540px
+    }
+}
+
+@media (min-width: 768px) {
+    .container {
+        max-width: 720px
+    }
+}
+
+@media (min-width: 992px) {
+    .container {
+        max-width: 960px
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1140px
+    }
+}
+
+
