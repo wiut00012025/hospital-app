@@ -9,6 +9,9 @@
     .mySlides img {
         height: 70%;
     }
+    .text h1 {
+        font-size: 30px;
+    }
 }
 @media (max-width: 858px){
     .checkbtn{
@@ -42,6 +45,18 @@
     .mySlides img {
         height: 50%;
     }
+    .text h1 {
+        font-size: 24px;
+    }
+    .text a {
+        color: white;
+        font-size: 11px;
+        padding: 7px 13px;
+        background-color: #1b9dff;
+        border-radius: 3px;
+        text-transform: uppercase;
+    }
+
 }
 
 @media only screen and (max-width: 300px) {

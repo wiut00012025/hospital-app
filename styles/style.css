@@ -50,7 +50,7 @@ nav ul li a {
 }
 
 a.active, a:hover {
-    background: #1b9bff;
+    background: #1b9dff;
     transition: .5s;
 }
 
@@ -193,7 +193,7 @@ a,
 }
 
 .mySlides {
-    display: none
+    display: none;
 }
 
 .mySlides img {
@@ -201,11 +201,14 @@ a,
     height: 500px;
     border-radius: 10px;
     -webkit-filter: blur(2px); /* Safari 6.0 - 9.0 */
-    filter: blur(2px);
+    /*filter: blur(2px);*/
+    filter: brightness(50%);
 }
 
 .slideshow-container {
-    max-width: 1000px;
+    text-align: center;
+    color: white;
+    max-width: 80%;
     position: relative;
     margin: 20px auto;
     border-radius: 10px;
@@ -232,56 +235,38 @@ a,
     border-radius: 10px;
 }
 
+.prev {
+    left: 0;
+    border-radius: 10px;
+}
+
 .prev:hover, .next:hover {
     background-color: rgba(0, 0, 0, 0.8);
 }
 
 .text {
-    /*color: #f2f2f2;*/
-    /*font-size: 15px;*/
-    /*padding: 8px 12px;*/
-    /*position: absolute;*/
-    /*bottom: 8px;*/
-    /*width: 100%;*/
-    /*text-align: center;*/
-
-    display: table-cell;
-    text-align: center;
-    vertical-align: middle;
     position: absolute;
-    top: 0px;
-    left: 0;
-    right: 0;
-    height: 100%;
-    padding: 22% 0%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
+
 .text h1 {
     font-size: 50px;
     color: #ffffff;
-
+    font-weight: bold;
 }
 
-.numbertext {
-    color: #f2f2f2;
-    font-size: 12px;
-    padding: 8px 12px;
-    position: absolute;
-    top: 0;
+.text a {
+    color: white;
+    font-size: 17px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
 }
 
-.dot {
-    cursor: pointer;
-    height: 15px;
-    width: 15px;
-    margin: 0 2px;
-    background-color: #fff;
-    border-radius: 50%;
-    display: inline-block;
-    transition: background-color 0.6s ease;
-}
-
-.active, .dot:hover {
-    background-color: #202124;
+.text a:hover {
+    background-color: #0082e6;
 }
 
 .fade {
