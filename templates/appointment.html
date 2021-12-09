@@ -37,6 +37,129 @@
     </nav>
 </header>
 <!-- End header -->
+
+<section class="appointment-main">
+
+    <div class="appoint-form">
+        <form id="app-form">
+            <h1 class="title">Book Your Appointment</h1>
+            <div class="field">
+                <input class="form-control" id="name" type="text" name="name" placeholder="Enter Your Full Name"
+                       required autofocus/>
+                <label for="name">Name*</label>
+            </div>
+            <div class="field">
+                <input class="form-control" id="email" type="text" name="email" placeholder="Enter Your Email"/>
+                <label class="label" for="email">Email</label>
+            </div>
+            <div class="field">
+                <input class="form-control" id="phone" type="text" name="phone" placeholder="Enter Your Phone Number"
+                       required/>
+                <label class="label" for="phone">Phone*</label>
+            </div>
+            <div class="field">
+                <textarea class="form-control" id="symptoms" rows="4" name="symptoms"
+                          placeholder="Your symptoms..."></textarea>
+                <label class="label" for="symptoms">Symptoms*</label>
+            </div>
+            <div class="field time">
+                <input class="form-control" id="date" type="datetime-local" name="date" required/>
+                <label class="label" for="date">Time*</label>
+            </div>
+            <input value="Add" class="btn btn-primary pull-right append" id="addBtn" type="button" name="append"
+                   onclick="newElement()">
+            <input value="Remove" class="btn btn-primary pull-right append" id="deleteBtn" type="button" name="append"
+                   onclick="removeRow()">
+        </form>
+    </div>
+    <br>
+    <br>
+    <table id="appointments" class="table table-striped">
+        <thead>
+        <tr>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Phone Number</th>
+            <th>Symptoms</th>
+            <th>Time</th>
+        </tr>
+        </thead>
+        <tbody id="tbody">
+        <tr>
+            <td>Some One</td>
+            <td>someone@email.com</td>
+            <td>123456</td>
+            <td>Laboratory Service</td>
+            <td>Wed Dec 15 2021 12:05:00 GMT+0500 (Uzbekistan Standard Time)</td>
+        </tr>
+        <tr>
+            <td>Some One Else</td>
+            <td>someoneelse@email.com</td>
+            <td>12345678</td>
+            <td>X-ray Service</td>
+            <td>Wed Dec 15 2021 12:05:00 GMT+0500 (Uzbekistan Standard Time)</td>
+        </tr>
+        <tr>
+            <td>Some Body</td>
+            <td>somebody@email.com</td>
+            <td>0123456</td>
+            <td>Health check Service</td>
+            <td>Wed Dec 15 2021 12:05:00 GMT+0500 (Uzbekistan Standard Time)</td>
+        </tr>
+        </tbody>
+    </table>
+</section>
+
+<footer class="footer-distributed">
+
+    <div class="footer-left">
+
+        <label class="logo">Uzmedical</label>
+
+        <p class="footer-links">
+            <a class="link-1" href="index.html">Home</a>
+            <a href="service.html">Services</a>
+            <a href="appointment.html">Appointment</a>
+            <a href="team.html">Our Team</a>
+            <a href="about.html">About Us</a>
+            <a href="contact.html">Contact</a>
+
+        </p>
+
+        <p class="footer-company-name">This website was created to fulfill Web Technology module’s
+            requirements and does not represent an actual company or service.</p>
+    </div>
+
+    <div class="footer-center">
+
+        <div>
+            <p><span>12 Istiqlol Street</span> Tashkent, Uzbekistan</p>
+        </div>
+
+        <div>
+            <p>+998 99 999 99 99</p>
+        </div>
+
+        <div>
+            <p><a href="mailto:support@company.com">support@uzmedical.com</a></p>
+        </div>
+
+    </div>
+
+    <div class="footer-right">
+
+        <p class="footer-company-about">
+            <span>About the company</span>
+            Lorem ipsum dolor sit amet, consectateur adispicing elit. Fusce euismod convallis velit, eu auctor lacus
+            vehicula sit amet.
+        </p>
+
+
+    </div>
+
+</footer>
+
+
 <script src="../scripts/main.js"></script>
 
 </body>
