@@ -13,7 +13,6 @@ body {
     font-size: 15px;
     font-family: 'Catamaran', sans-serif;
     line-height: 1.80857;
-
 }
 
 nav {
@@ -850,4 +849,14 @@ td, th {
 }
 .contact-footer {
     margin-top: 200px;
+}
+
+.about-footer {
+    margin-top: 2000px;
+}
+
+.about-section img {
+    width: 90%;
+    padding: 20px;
+    margin: 0 auto;
 }
