@@ -24,7 +24,7 @@
     .checkbtn{
         display: block;
     }
-    ul{
+    nav ul{
         position: fixed;
         width: 100%;
         height: 100vh;
@@ -64,6 +64,9 @@
         border-radius: 3px;
         text-transform: uppercase;
     }
+    .contact-footer {
+        margin-top: 800px;
+    }
 
 }
 
@@ -73,6 +76,9 @@
     }
     .footer-center .footer-right {
         color: black;
+    }
+    .contact-footer {
+        margin-top: 900px;
     }
 }
 
@@ -119,6 +125,10 @@
     }
     form .field label {
         font-size: 12px;
+    }
+    #contacts > .container .wrapper {
+        display: inline-block;
+        flex-wrap: wrap;
     }
 }
 

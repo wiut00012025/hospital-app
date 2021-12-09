@@ -93,3 +93,33 @@ function removeRow() {
         alert("Successfully deleted!");
     }
 }
+
+function sendEmail(){
+    var name = document.getElementById("name").value;
+    var email = document.getElementById("email").value;
+    var phone = document.getElementById("phone").value;
+    var message = document.getElementById("message").value;
+
+    var isValid;
+    if (name === '') {
+        isValid = false;
+        alert("Name Cannot be Empty");
+    } else if (email === '') {
+        isValid = false;
+        alert("Email Cannot be Empty");
+    } else if (phone === '') {
+        isValid = false;
+        alert("Phone Cannot be Empty");
+    } else if (message === '') {
+        isValid = false;
+        alert("Message Cannot be Empty");
+    }  else {
+        isValid = true;
+    }
+    if (isValid){
+        alert("Successfully Sent!");
+        var form = document.getElementById("contact-form");
+        form.reset();
+    }
+
+}

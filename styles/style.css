@@ -291,8 +291,9 @@ a:hover {
 }
 
 .col-text {
-    height:20em;
+    height: 20em;
 }
+
 .grid-flex {
     display: -webkit-box;
     display: -webkit-flex;
@@ -308,30 +309,36 @@ a:hover {
     -webkit-justify-content: space-around;
     margin-bottom: 40px;
 }
+
 .col {
     -webkit-box-flex: 1;
     -webkit-flex: 1;
     -ms-flex: 1;
     flex: 1;
 }
+
 .col-left {
-    -webkit-box-ordinal-group:-1;
+    -webkit-box-ordinal-group: -1;
     -webkit-order: -1;
     -ms-flex-order: -1;
     order: -1;
 }
-.col-text{
+
+.col-text {
     display: flex;
     align-items: center;
     justify-content: center;
 }
+
 .Aligner-item {
     width: 60%;
 }
+
 .col-image {
     background-size: cover;
-    background-position:center center;
+    background-position: center center;
 }
+
 .Aligner-item p {
     margin-bottom: 5%;
 }
@@ -349,53 +356,54 @@ footer {
 
 }
 
-.footer-distributed{
+.footer-distributed {
     box-sizing: border-box;
     width: 100%;
     text-align: left;
     font: bold 16px sans-serif;
     padding: 55px 50px;
     bottom: 0;
+    /*position: absolute;*/
 }
 
 .footer-distributed .footer-left,
 .footer-distributed .footer-center,
-.footer-distributed .footer-right{
+.footer-distributed .footer-right {
     display: inline-block;
     vertical-align: top;
 }
 
 /* Footer left */
 
-.footer-distributed .footer-left{
+.footer-distributed .footer-left {
     width: 40%;
 }
 
 /* The company logo */
 
-.footer-distributed h3{
-    color:  #ffffff;
+.footer-distributed h3 {
+    color: #ffffff;
     font: normal 36px 'Open Sans', cursive;
     margin: 0;
 }
 
 /* Footer links */
 
-.footer-distributed .footer-links{
-    color:  #ffffff;
+.footer-distributed .footer-links {
+    color: #ffffff;
     margin: 20px 0 12px;
     padding: 0;
 }
 
-.footer-distributed .footer-links a{
-    display:inline-block;
+.footer-distributed .footer-links a {
+    display: inline-block;
     line-height: 1.8;
-    font-weight:400;
+    font-weight: 400;
     text-decoration: none;
-    color:  inherit;
+    color: inherit;
 }
 
-.footer-distributed .footer-company-name{
+.footer-distributed .footer-company-name {
     font-size: 14px;
     font-weight: normal;
     margin: 0;
@@ -404,11 +412,11 @@ footer {
 
 /* Footer Center */
 
-.footer-distributed .footer-center{
+.footer-distributed .footer-center {
     width: 35%;
 }
 
-.footer-distributed .footer-center i{
+.footer-distributed .footer-center i {
     background-color: #69a9da;
     color: #ffffff;
     font-size: 25px;
@@ -422,29 +430,29 @@ footer {
     vertical-align: middle;
 }
 
-.footer-distributed .footer-center i{
+.footer-distributed .footer-center i {
     font-size: 17px;
     line-height: 38px;
 }
 
-.footer-distributed .footer-center p{
+.footer-distributed .footer-center p {
     display: inline-block;
     color: #ffffff;
-    font-weight:400;
+    font-weight: 400;
     /*vertical-align: middle;*/
-    margin:0;
+    margin: 0;
 }
 
-.footer-distributed .footer-center p span{
-    display:block;
+.footer-distributed .footer-center p span {
+    display: block;
     font-weight: normal;
-    font-size:14px;
-    line-height:2;
+    font-size: 14px;
+    line-height: 2;
 }
 
 .footer-distributed .footer-links a:before {
     content: "|";
-    font-weight:300;
+    font-weight: 300;
     font-size: 20px;
     left: 0;
     color: #fff;
@@ -458,36 +466,36 @@ footer {
 
 /* Footer Right */
 
-.footer-distributed .footer-right{
+.footer-distributed .footer-right {
     width: 20%;
 }
 
-.footer-distributed .footer-company-about{
+.footer-distributed .footer-company-about {
     line-height: 20px;
-    color:  #ffffff;
+    color: #ffffff;
     font-size: 13px;
     font-weight: normal;
     /*margin: 0;*/
 }
 
-.footer-distributed .footer-company-about span{
+.footer-distributed .footer-company-about span {
     display: block;
-    color:  #ffffff;
+    color: #ffffff;
     font-size: 14px;
     font-weight: bold;
     margin-bottom: 20px;
 }
 
-.footer-distributed .footer-icons{
+.footer-distributed .footer-icons {
     margin-top: 25px;
 }
 
-.footer-distributed .footer-icons a{
+.footer-distributed .footer-icons a {
     display: inline-block;
     width: 35px;
     height: 35px;
     cursor: pointer;
-    background-color:  #ffffff;
+    background-color: #ffffff;
     border-radius: 2px;
 
     font-size: 20px;
@@ -517,31 +525,34 @@ footer {
     flex-wrap: wrap;
 }
 
-.service-inner{
+.service-inner {
     background: #ffffff;
     text-align: center;
     margin-bottom: 60px;
     border: 10px solid #fff;
-    box-shadow: 0 2px 5px rgba(0,0,0,.1);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, .1);
     width: 30%;
     margin-left: 20px;
     margin-right: 20px;
 }
 
-.service-img{
+.service-img {
     overflow: hidden;
 }
-.service-img img{
+
+.service-img img {
     transition: all 0.9s ease 0s;
 }
-.service-inner:hover .service-img img{
+
+.service-inner:hover .service-img img {
     -moz-transform: scale(1.5) rotate(-10deg);
     -webkit-transform: scale(1.5) rotate(-10deg);
     -ms-transform: scale(1.5) rotate(-10deg);
     -o-transform: scale(1.5) rotate(-10deg);
     transform: scale(1.5) rotate(-10deg);
 }
-.service-inner a{
+
+.service-inner a {
     border-radius: 2px;
     transition: .2s;
     letter-spacing: 1px;
@@ -553,26 +564,28 @@ footer {
     line-height: 24px;
 }
 
-.service-inner a.new-btn-d.br-2{
+.service-inner a.new-btn-d.br-2 {
     border: 2px solid #12557f;
 }
 
-.service-inner a.new-btn-d::before{
-    background: rgba(18,85,127,0.2);
+.service-inner a.new-btn-d::before {
+    background: rgba(18, 85, 127, 0.2);
 }
 
 
-.service-inner a:hover{
+.service-inner a:hover {
     color: #ffffff;
 }
 
-.service-inner h2{
+.service-inner h2 {
     margin-top: 20px;
 }
+
 .img-in {
     max-width: 100%;
     height: auto
 }
+
 .center {
     margin-left: 40%;
     padding: 20px;
@@ -591,6 +604,7 @@ footer {
     cursor: pointer;
     text-decoration: none;
 }
+
 form .field {
     width: 100%;
     position: relative;
@@ -620,16 +634,19 @@ form .field textarea {
     padding-left: 19.5%;
     color: #313a3d;
 }
+
 form #symptoms {
     height: 64px;
     resize: none;
     transition: all 333ms ease-in-out;
     padding-top: 18px;
 }
+
 form textarea:focus#symptoms,
 form textarea:not(:placeholder-shown)#symptoms {
     height: 166px;
 }
+
 form input[type="text"]:focus + label,
 form input[type="text"]:not(:placeholder-shown) + label,
 form textarea:focus + label,
@@ -637,6 +654,7 @@ form textarea:not(:placeholder-shown) + label,
 form .field:hover label {
     width: 18%;
 }
+
 #addBtn {
     background-color: #00ff00;
     -webkit-appearance: none;
@@ -645,10 +663,12 @@ form .field:hover label {
     padding: 13px 50px;
     transition: all 0.3s ease-in-out;
 }
+
 #addBtn:hover,
 #addBtn:focus {
     background-color: #71f56a;
 }
+
 #deleteBtn {
     background-color: #ff0012;
     -webkit-appearance: none;
@@ -657,6 +677,7 @@ form .field:hover label {
     padding: 13px 50px;
     transition: all 0.3s ease-in-out;
 }
+
 #deleteBtn:hover,
 #deleteBtn:focus {
     background: #f83838;
@@ -665,7 +686,7 @@ form .field:hover label {
 table {
     width: 750px;
     border-collapse: collapse;
-    margin:50px auto;
+    margin: 50px auto;
 }
 
 /* Zebra striping */
@@ -687,3 +708,146 @@ td, th {
 }
 
 
+#contacts .container {
+    max-width: 1170px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1em;
+}
+
+.company-info ul {
+    list-style: none;
+    padding: 0;
+}
+.company-info ul li {
+    margin: 15px;
+}
+
+.brand {
+    text-align: center;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+}
+
+.brand span {
+    color: #ffffff;
+}
+
+/*.wrapper {*/
+/*    box-shadow: 0 0 20px 0 rgba(152, 186, 250, 0.7);*/
+/*}*/
+
+.wrapper > * {
+    padding: 1em;
+}
+
+/* ------------------- */
+/* COMPANY INFORMATION */
+/* ------------------- */
+
+.company-info {
+    background: #C3C9DD;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+}
+
+.company-info h3,
+.company-info ul {
+    text-align: center;
+    margin: 0 0 1rem 0;
+}
+
+/* ------- */
+/* CONTACT */
+/* ------- */
+
+.contact {
+    background: #dcdfea;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+
+/* ---- */
+/* FORM */
+/* ---- */
+
+.contact form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+}
+
+.contact form label {
+    display: block;
+}
+
+.contact form p {
+    margin: 0;
+}
+
+.contact form .full {
+    grid-column: 1 / 3;
+}
+
+.contact form button,
+.contact form input,
+.contact form textarea {
+    width: 100%;
+    padding: 1em;
+    border: solid 1px #4593ce;
+    border-radius: 4px;
+}
+
+.contact form textarea {
+    resize: none;
+}
+
+.contact form button {
+    background: #0082e6;
+    border: 0;
+    color: #e4e4e4;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.contact form button:hover,
+.contact form button:focus {
+    background: #3952a3;
+    color: #ffffff;
+    outline: 0;
+    transition: background-color 2s ease-out;
+}
+
+/* ------------- */
+/* MEDIA QUERIES */
+/* ------------- */
+
+@media only screen and (min-width: 700px) {
+    .wrapper {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+    }
+
+    .wrapper > * {
+        padding: 2em;
+    }
+
+    .company-info {
+        border-radius: 4px 0 0 4px;
+    }
+
+    .contact {
+        border-radius: 0 4px 4px 0;
+    }
+
+    .company-info h3,
+    .company-info ul,
+    .brand {
+        text-align: left;
+    }
+}
+.contact-footer {
+    margin-top: 200px;
+}

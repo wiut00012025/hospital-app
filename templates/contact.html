@@ -38,53 +38,116 @@
 </header>
 <!-- End header -->
 
-<footer class="footer-distributed">
+<section id="contacts">
+    <div class="title">Contact Us</div>
 
-    <div class="footer-left">
+    <div class="container">
 
-        <label class="logo">Uzmedical</label>
+        <div class="wrapper">
 
-        <p class="footer-links">
-            <a class="link-1" href="index.html">Home</a>
-            <a href="service.html">Services</a>
-            <a href="appointment.html">Appointment</a>
-            <a href="team.html">Our Team</a>
-            <a href="about.html">About Us</a>
-            <a href="contact.html">Contact</a>
+            <!-- COMPANY INFORMATION -->
+            <div class="company-info">
+                <h3 class="title">Uzmedical</h3>
+                <ul>
+                    <li><a class="active" href="https://goo.gl/maps/wxSG9PXevxikECrG9">&bigstar; 12 Istiqbol Street,
+                        Tashkent</a></li>
+                    <li><a class="active" href="tel:+998999999999">&phone; +998 99 999 99 99</a></li>
+                    <li><a class="active" href="mailto:mail@uzmedical.com">&boxtimes; support@uzmedical.com</a></li>
+                    <li><br></li>
+                    <li>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2997.0864130707682!2d69.28118525068842!3d41.30698370883744!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38ae8ad59297d1cf%3A0xda0402847aed7b96!2z0JzQtdC20LTRg9C90LDRgNC-0LTQvdGL0Lkg0JLQtdGB0YLQvNC40L3RgdGC0LXRgNGB0LrQuNC5INCj0L3QuNCy0LXRgNGB0LjRgtC10YIg0LIg0KLQsNGI0LrQtdC90YLQtQ!5e0!3m2!1sru!2s!4v1639050871439!5m2!1sru!2s"
+                                width="300" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    </li>
+                </ul>
+            </div>
+            <!-- End .company-info -->
 
-        </p>
+            <!-- CONTACT FORM -->
+            <div class="contact">
+                <h3>E-mail Us</h3>
 
-        <p class="footer-company-name">This website was created to fulfill Web Technology module’s
-            requirements and does not represent an actual company or service.</p>
+                <form id="contact-form">
+
+                    <div class="full">
+                        <label for="name">Name</label>
+                        <input type="text" name="name" id="name">
+                    </div>
+
+                    <div>
+                        <label for="email">E-mail Address</label>
+                        <input type="text" name="email" id="email">
+                    </div>
+
+                    <div>
+                        <label for="phone">Phone Number</label>
+                        <input type="text" name="phone" id="phone">
+                    </div>
+
+                    <div class="full">
+                        <label for="message">Message</label>
+                        <textarea name="message" rows="5" id="message"></textarea>
+                    </div>
+
+                    <div class="full">
+                        <button type="submit" onclick="sendEmail()">Submit</button>
+                    </div>
+
+                </form>
+                <!-- End #contact-form -->
+            </div>
+            <!-- End .contact -->
+
+        </div>
+        <!-- End .wrapper -->
     </div>
+</section>
 
-    <div class="footer-center">
+<footer class="contact-footer ">
+    <div class="footer-distributed">
+        <div class="footer-left">
 
-        <div>
-            <p><span>12 Istiqlol Street</span> Tashkent, Uzbekistan</p>
+            <label class="logo">Uzmedical</label>
+
+            <p class="footer-links">
+                <a class="link-1" href="index.html">Home</a>
+                <a href="service.html">Services</a>
+                <a href="appointment.html">Appointment</a>
+                <a href="team.html">Our Team</a>
+                <a href="about.html">About Us</a>
+                <a href="contact.html">Contact</a>
+
+            </p>
+
+            <p class="footer-company-name">This website was created to fulfill Web Technology module’s
+                requirements and does not represent an actual company or service.</p>
         </div>
 
-        <div>
-            <p>+998 99 999 99 99</p>
+        <div class="footer-center">
+
+            <div>
+                <p><span>12 Istiqbol Street</span> Tashkent, Uzbekistan</p>
+            </div>
+
+            <div>
+                <p>+998 99 999 99 99</p>
+            </div>
+
+            <div>
+                <p><a href="mailto:support@company.com">support@uzmedical.com</a></p>
+            </div>
+
         </div>
 
-        <div>
-            <p><a href="mailto:support@company.com">support@uzmedical.com</a></p>
+        <div class="footer-right">
+
+            <p class="footer-company-about">
+                <span>About the company</span>
+                Lorem ipsum dolor sit amet, consectateur adispicing elit. Fusce euismod convallis velit, eu auctor lacus
+                vehicula sit amet.
+            </p>
+
         </div>
-
     </div>
-
-    <div class="footer-right">
-
-        <p class="footer-company-about">
-            <span>About the company</span>
-            Lorem ipsum dolor sit amet, consectateur adispicing elit. Fusce euismod convallis velit, eu auctor lacus
-            vehicula sit amet.
-        </p>
-
-
-    </div>
-
 </footer>
 
 
