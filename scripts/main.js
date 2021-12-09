@@ -5,14 +5,10 @@ function plusSlides(n) {
     showSlides(slideIndex += n);
 }
 
-function currentSlide(n) {
-    showSlides(slideIndex = n);
-}
-
+//function to show slides
 function showSlides(n) {
     var i;
     var slides = document.getElementsByClassName("mySlides");
-    var dots = document.getElementsByClassName("dot");
     if (n > slides.length) {
         slideIndex = 1
     }
@@ -28,8 +24,9 @@ function showSlides(n) {
     slides[slideIndex-1].style.display = "block";
     dots[slideIndex-1].className += " active";
 }
-
+//this function takes inputs and creates a new row on the table
 function newElement() {
+    //getting inputs of inputs
     var name = document.getElementById("name").value;
     var email = document.getElementById("email").value;
     var phone = document.getElementById("phone").value;
@@ -40,6 +37,7 @@ function newElement() {
 
     var table = document.getElementById("appointments");
     var isValid;
+    //validation
     if (name === '') {
         isValid = false;
         alert("Name Cannot be Empty");
@@ -76,30 +74,32 @@ function newElement() {
     }
 
 }
-
+//function to received date to date format
 function convertDateToUTC(date) {
     return new Date(date.getUTCFullYear(), date.getUTCMonth(), date.getUTCDate(), date.getUTCHours(), date.getUTCMinutes(), date.getUTCSeconds());
 }
 
 var rws;
-
+//removes the row
 function removeRow() {
     obj = document.getElementById('tbody');
     rws = obj.getElementsByTagName('tr');
     if (rws.length === 3) {
+        //default rows are kept
         alert("You can only delete your appointments");
     } else {
         obj.removeChild(rws[rws.length - 1]);
         alert("Successfully deleted!");
     }
 }
-
+//emailing sending form function
 function sendEmail(){
     var name = document.getElementById("name").value;
     var email = document.getElementById("email").value;
     var phone = document.getElementById("phone").value;
     var message = document.getElementById("message").value;
 
+    //validation of inputs
     var isValid;
     if (name === '') {
         isValid = false;
@@ -118,6 +118,7 @@ function sendEmail(){
     }
     if (isValid){
         alert("Successfully Sent!");
+        //clear inputs
         var form = document.getElementById("contact-form");
         form.reset();
     }
